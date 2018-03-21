@@ -1,0 +1,186 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Ariel,  cursive;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  background-color: black;
+  z-index: 100;
+}
+
+header h2 {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+#wrapper {
+  width: 1024px;
+  min-height: 786px;
+  margin: 0 auto;
+  padding: 10px 0px;
+  margin-top: 90px;
+}
+
+#wrapper li {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+#portfolio li img:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  position: fixed;
+  opacity: 0.9;
+  margin: 0px;
+}
+
+#frame {
+  display: none;
+  position: fixed;
+  left: 50%;
+  width: 900px;
+  height: 80%;
+  background: white;
+  margin-left: -450px;
+  padding: 25px;
+  /* border-radius: 20px; */
+}
+
+#main {
+  width: inherit;
+  height: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+#wrapper ul li img {
+  width: 240px;
+}
+
+#left, #right {
+  padding: 0px 20px;
+  margin: 0px;
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(2);
+}
+
+#frame_table {
+  position: absolute;
+  width: inherit;
+  z-index: 10;
+  top:45%;
+}
+
+#left {
+  float: left;
+  border-radius: 200px;
+  border-radius: 200px;
+  margin-left: 50px;
+}
+
+#left:hover {
+  cursor: pointer;
+}
+
+#right {
+  float: right;
+  border-radius: 200px;
+  border-radius: 200px;
+  margin-right: 50px;
+}
+
+#right:hover {
+  cursor: pointer;
+}
+
+#info {
+    position: absolute;
+    width: inherit;
+    height: 20%;
+    background: rgba(0, 0, 0, 0.6);
+    top: 77%;
+}
+
+#info p {
+    color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 700px) {
+  #wrapper {
+    width: 100%;
+    min-height: 0px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    margin-top: 90px;
+  }
+
+  #wrapper ul {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  #wrapper ul li {
+    display: list-item;
+  }
+
+  #wrapper ul li img {
+    width: 60%;
+    background: blue;
+    margin-left: 50px;
+  }
+
+  #frame {
+    display: none;
+    position: fixed;
+    left: 50%;
+    width: 500px;
+    height: 60%;
+    background: white;
+    margin-left: -270px;
+    padding: 25px;
+    /* border-radius: 20px; */
+  }
+
+  #main {
+    width: inherit;
+    height: 100%;
+    margin: 0 auto;
+    clear: both;
+  }
+}
